@@ -1,7 +1,7 @@
 function App() {
   return (
     <>
-      <h1>PregAI</h1>
+      <h1>PregAI - Plataforma Evangelistica</h1>
     </>
   );
 }
