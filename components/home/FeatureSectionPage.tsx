@@ -37,7 +37,6 @@ const FeatureSectionPage = ({ feature, setActiveTab }: FeatureSectionProps) => {
     green: "text-green-600 hover:text-green-800",
   };
 
-  // safe lookups with type cast and fallback to empty string
   const iconClass =
     iconColorClasses[iconColor as keyof typeof iconColorClasses] ?? "";
   const buttonClass =

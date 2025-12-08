@@ -1,4 +1,3 @@
-// ...existing code...
 import HeroSection from "./HeroSectionPage";
 import FeaturesSection from "./FeatureSectionPage";
 import type { FeatureItemProps } from "./FeatureSectionPage";
@@ -62,4 +61,3 @@ const HomePage = ({ setActiveTab }: HomeProps) => {
 };
 
 export default HomePage;
-// ...existing code...

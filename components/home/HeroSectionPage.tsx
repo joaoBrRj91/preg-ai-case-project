@@ -10,7 +10,6 @@ const HeroSectionPage = ({
       <div className="absolute inset-0 bg-black opacity-20"></div>
       <div className="relative max-w-7xl mx-auto px-4 py-12 sm:py-20">
         <div className="text-center">
-          {/* Imagem representativa */}
           <div className="flex justify-center items-center mb-8">
             <img
               src="/src/assets/background_pregai.jpeg"
@@ -28,7 +27,6 @@ const HeroSectionPage = ({
             "O chamado para pregar é divino. O apoio para pregar com excelência
             pode vir da tecnologia."
           </p>
-          {/* Ícones de funcionalidades */}
           <div className="flex justify-center space-x-6 sm:space-x-12 mb-8">
             <div className="text-center">
               <Sparkles className="h-8 w-8 sm:h-12 sm:w-12 mx-auto mb-2 opacity-80" />
