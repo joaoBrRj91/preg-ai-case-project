@@ -20,7 +20,7 @@ const HeroSectionPage = ({
           <p className="text-lg sm:text-xl md:text-2xl mb-2 opacity-90">
             Inspirando vidas com tecnologia
           </p>
-          <p className="text-base sm:text-lg md:text-xl opacity-80 mb-8">
+          <p className="text-base sm:text-lg md:text-xl opacity-80 mb-10 mt-3">
             a serviço do Reino
           </p>
           <p className="text-sm sm:text-base italic mb-8 max-w-2xl mx-auto opacity-90">
@@ -28,16 +28,19 @@ const HeroSectionPage = ({
             pode vir da tecnologia."
           </p>
           <div className="flex justify-center space-x-6 sm:space-x-12 mb-8">
-            <div className="text-center">
+            <div className="text-center" title="Utilização de IA">
               <Sparkles className="h-8 w-8 sm:h-12 sm:w-12 mx-auto mb-2 opacity-80" />
             </div>
-            <div className="text-center">
+            <div className="text-center" title="Embasamento Bíblico">
               <Book className="h-8 w-8 sm:h-12 sm:w-12 mx-auto mb-2 opacity-80" />
             </div>
-            <div className="text-center">
+            <div className="text-center" title="Criação de Sermões">
               <FileText className="h-8 w-8 sm:h-12 sm:w-12 mx-auto mb-2 opacity-80" />
             </div>
-            <div className="text-center">
+            <div
+              className="text-center"
+              title="Otimização de Sermões Através de Upload"
+            >
               <Upload className="h-8 w-8 sm:h-12 sm:w-12 mx-auto mb-2 opacity-80" />
             </div>
           </div>
