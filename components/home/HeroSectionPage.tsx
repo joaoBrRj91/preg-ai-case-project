@@ -47,14 +47,14 @@ const HeroSectionPage = ({
           <div className="space-y-4 sm:space-y-0 sm:space-x-4 sm:flex sm:justify-center">
             <button
               onClick={() => setActiveTab("generate")}
-              className="w-full sm:w-auto bg-white text-blue-700 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition duration-300 flex items-center justify-center"
+              className="w-full sm:w-auto bg-blue-800 text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-800 ransition duration-300 flex items-center justify-center"
             >
               <Sparkles className="h-5 w-5 mr-2" />
               Gerar Sermão
             </button>
             <button
               onClick={() => setActiveTab("optimize")}
-              className="w-full sm:w-auto bg-blue-800 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-900 transition duration-300 flex items-center justify-center"
+              className="w-full sm:w-auto bg-blue-800 text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-800 ransition duration-300 flex items-center justify-center"
             >
               <Upload className="h-5 w-5 mr-2" />
               Otimizar Sermão

@@ -2,7 +2,7 @@
 import HeroSection from "./HeroSectionPage";
 import FeaturesSection from "./FeatureSectionPage";
 import type { FeatureItemProps } from "./FeatureSectionPage";
-import { Book, FileText, Zap } from "lucide-react";
+import { Book, FileText } from "lucide-react";
 
 interface HomeProps {
   setActiveTab: (tab: string) => void;
