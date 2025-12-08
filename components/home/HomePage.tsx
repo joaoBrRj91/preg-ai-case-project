@@ -2,7 +2,7 @@
 import HeroSection from "./HeroSectionPage";
 import FeaturesSection from "./FeatureSectionPage";
 import type { FeatureItemProps } from "./FeatureSectionPage";
-import { Book, FileText } from "lucide-react";
+import { Book, FileText, Zap } from "lucide-react";
 
 interface HomeProps {
   setActiveTab: (tab: string) => void;
@@ -35,14 +35,18 @@ const HomePage = ({ setActiveTab }: HomeProps) => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
       <HeroSection setActiveTab={setActiveTab} />
-      <div className="text-center mb-12 mt-8">
-        <h1 className="text-3xl sm:text-4xl font-extrabold text-gray-900">
-          PregAI – MVP
-        </h1>
-        <p className="text-gray-600 mt-2 text-base sm:text-lg">
-          Uma ferramenta inteligente para auxiliar na criação e otimização de
-          sermões.
-        </p>
+      <div className="bg-white rounded-lg shadow-md max-w-2xl mx-auto px-4 py-6 sm:px-4 lg:px-8 mt-5 mb-10">
+        <div className="text-center mb-12 mt-8">
+          <h1 className="text-xl font-semibold text-gray-900 mb-3">
+            PregAI – MVP
+          </h1>
+          <p className="text-gray-600 mb-4 leading-relaxed">
+            Uma ferramenta inteligente para auxiliar na criação e otimização de
+            sermões. Com ela será possível gerar sermões completos a partir de
+            temas sugeridos e otimizar sermões já existentes, garantindo maior
+            impacto e relevância para o público-alvo.
+          </p>
+        </div>
       </div>
       <div className="grid gap-6 md:grid-cols-2">
         {features.map((feature, idx) => (
