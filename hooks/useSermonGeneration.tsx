@@ -35,8 +35,9 @@ export const useSermonGeneration = () => {
     setError(null);
 
     try {
-      // Simulação da chamada e retorno da API do Gpt que será implementada posterimente em um projeto especifico de backend
+      console.log("[Inicio] - Chamada API LLM");
       await new Promise((resolve) => setTimeout(resolve, 2000));
+      console.log("[FIM] - Chamada API LLM");
 
       const mockSermon: SermonResultData = {
         title: `${title}: Uma Jornada de Fé`,
