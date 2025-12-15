@@ -1,6 +1,6 @@
 import { useState } from "react";
 import HomePage from "./components/home/HomePage";
-import GenerateSermon from "./components/Sermon/GenerateSermon";
+import GenerateSermon from "./components/Sermon/Generate/GenerateSermon";
 
 const App = () => {
   const [activeTab, setActiveTab] = useState("home");

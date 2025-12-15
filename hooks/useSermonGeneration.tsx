@@ -1,5 +1,5 @@
 import { useState } from "react";
-import type { SermonResultData } from "../components/Sermon/SermonResult";
+import type { SermonResultData } from "../components/Sermon/Generate/SermonResult";
 
 export interface SermonFormData {
   title: string;

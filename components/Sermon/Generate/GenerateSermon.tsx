@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { Sparkles, Loader } from "lucide-react";
-import { useSermonGeneration } from "../../hooks/useSermonGeneration";
-import SermonResult from "../../components/Sermon/SermonResult";
-import type { SermonFormData } from "../../hooks/useSermonGeneration";
-import { SERMON_STYLES, TARGET_AUDIENCES } from "../../utils/constants";
+import { useSermonGeneration } from "../../../hooks/useSermonGeneration";
+import SermonResult from "./SermonResult";
+import type { SermonFormData } from "../../../hooks/useSermonGeneration";
+import { SERMON_STYLES, TARGET_AUDIENCES } from "../../../utils/constants";
 
 const GenerateSermon = () => {
   const { loading, error, generatedSermon, generateSermon } =
