@@ -1,5 +1,5 @@
 import { useState, useCallback } from "react";
-import { FILE_CONFIG } from "../utils/constants";
+import { FILE_CONFIG } from "../../utils/constants";
 
 interface UploadedFile {
   name: string;
