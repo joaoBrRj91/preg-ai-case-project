@@ -40,10 +40,12 @@ const HomePage = ({ setActiveTab }: HomeProps) => {
             PregAI – MVP
           </h1>
           <p className="text-gray-600 mb-4 leading-relaxed">
-            Uma ferramenta inteligente para auxiliar na criação e otimização de
-            sermões. Com ela será possível gerar sermões completos a partir de
-            temas sugeridos e otimizar sermões já existentes, garantindo maior
-            impacto e relevância para o público-alvo.
+            PregAI é uma ferramenta de inteligência artificial que auxilia na
+            preparação de sermões, sem substituir a oração nem o direcionamento
+            de Deus. Mesmo ao gerar mensagens a partir de temas bíblicos, seu
+            uso exige discernimento e a busca constante pela orientação do
+            Espírito Santo, para que a Palavra seja transmitida com fidelidade e
+            edifique a igreja.
           </p>
         </div>
       </div>
