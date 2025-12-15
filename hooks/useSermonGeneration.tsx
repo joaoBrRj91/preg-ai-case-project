@@ -1,21 +1,10 @@
 import { useState } from "react";
+import type { SermonResultData } from "../components/Sermon/SermonResult";
 
 export interface SermonFormData {
   title: string;
   style: string;
   targetAudience: string;
-}
-
-export interface SermonResultData {
-  title: string;
-  introduction: string;
-  points: {
-    point: string;
-    verse: string;
-    development: string;
-  }[];
-  application: string;
-  prayer: string;
 }
 
 export const useSermonGeneration = () => {
