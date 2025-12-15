@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Sparkles, Loader } from "lucide-react";
 import { useSermonGeneration } from "../../hooks/useSermonGeneration";
+import SermonResult from "../../components/Sermon/SermonResult";
 import type { SermonFormData } from "../../hooks/useSermonGeneration";
 import { SERMON_STYLES, TARGET_AUDIENCES } from "../../utils/constants";
 
@@ -29,7 +30,6 @@ const GenerateSermon = () => {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
       <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition duration-300">
-        {/* Header */}
         <div className="text-center mb-8">
           <div className="bg-blue-100 p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
             <Sparkles className="h-8 w-8 text-blue-600" />
@@ -117,6 +117,15 @@ const GenerateSermon = () => {
             )}
           </button>
         </div>
+        {generatedSermon && (
+          <SermonResult
+            title={generatedSermon.title}
+            introduction={generatedSermon.introduction}
+            points={generatedSermon.points}
+            application={generatedSermon.application}
+            prayer={generatedSermon.prayer}
+          />
+        )}
       </div>
     </div>
   );
