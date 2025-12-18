@@ -37,7 +37,7 @@ const HomePage = ({ setActiveTab }: HomeProps) => {
       <div className="bg-white rounded-lg shadow-md max-w-2xl mx-auto px-4 py-6 sm:px-4 lg:px-8 mt-5 mb-10">
         <div className="text-center mb-12 mt-8">
           <h1 className="text-xl font-semibold text-gray-900 mb-3">
-            PregAI – MVP
+            PregAI - MVP
           </h1>
           <p className="text-gray-600 mb-4 leading-relaxed">
             PregAI é uma ferramenta de inteligência artificial que auxilia na

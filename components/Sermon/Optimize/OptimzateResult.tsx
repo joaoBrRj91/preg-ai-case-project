@@ -54,15 +54,6 @@ const OptimizationResult = ({
       </div>
 
       <div className="mb-6">
-        <h4 className="font-semibold text-gray-800 mb-3">Conteúdo Otimizado</h4>
-        <div className="bg-white rounded-lg p-6 border border-gray-200">
-          <p className="text-gray-700 leading-relaxed whitespace-pre-line">
-            {content}
-          </p>
-        </div>
-      </div>
-
-      <div className="mb-6">
         <h4 className="font-semibold text-gray-800 mb-3">
           Estatísticas originais do sermão
         </h4>
@@ -93,6 +84,15 @@ const OptimizationResult = ({
               <div className="text-sm text-gray-600 capitalize">{key}</div>
             </div>
           ))}
+        </div>
+      </div>
+
+      <div className="mb-6">
+        <h4 className="font-semibold text-gray-800 mb-3">Conteúdo Otimizado</h4>
+        <div className="bg-white rounded-lg p-6 border border-gray-200">
+          <p className="text-gray-700 leading-relaxed whitespace-pre-line">
+            {content}
+          </p>
         </div>
       </div>
 
