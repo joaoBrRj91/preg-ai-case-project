@@ -1,22 +1,5 @@
 import { useState } from "react";
-
-export interface SermonOptimizationData {
-  title: string;
-  improvements: string[];
-  content: string;
-  statisticsOriginalContent: {
-    words: string;
-    points: string;
-    verses: string;
-    minutes: string;
-  };
-  statisticsOptimizateContent: {
-    words: string;
-    points: string;
-    verses: string;
-    minutes: string;
-  };
-}
+import type { SermonOptimizationData } from "../../components/Sermon/Optimize/OptimzateResult";
 
 export const useSermonOptimization = () => {
   const [loading, setLoading] = useState(false);
