@@ -1,14 +1,8 @@
 import { useState, useCallback } from "react";
 import { FILE_CONFIG } from "../../utils/constants";
 
-interface UploadedFile {
-  name: string;
-  size: number;
-  type: string;
-}
-
 export const useFileUpload = () => {
-  const [uploadedFile, setUploadedFile] = useState<UploadedFile | null>(null);
+  const [uploadedFile, setUploadedFile] = useState<File | null>(null);
   const [uploadError, setUploadError] = useState<string | null>(null);
 
   const handleFileUpload = useCallback((file: File): boolean => {
@@ -24,11 +18,7 @@ export const useFileUpload = () => {
       return false;
     }
 
-    setUploadedFile({
-      name: file.name,
-      size: file.size,
-      type: file.type,
-    });
+    setUploadedFile(file);
     return true;
   }, []);
 
