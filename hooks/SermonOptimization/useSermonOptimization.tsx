@@ -4,13 +4,13 @@ export interface SermonOptimizationData {
   title: string;
   improvements: string[];
   content: string;
-  statisticsOldContent: {
+  statisticsOriginalContent: {
     words: string;
     points: string;
     verses: string;
     minutes: string;
   };
-  statisticsNewContent: {
+  statisticsOptimizateContent: {
     words: string;
     points: string;
     verses: string;
@@ -49,13 +49,13 @@ export const useSermonOptimization = () => {
           "Conclusão mais impactante",
         ],
         content: "Conteúdo completo do sermão otimizado...",
-        statisticsOldContent: {
+        statisticsOriginalContent: {
           words: "245",
           points: "3",
           verses: "4",
           minutes: "12-15",
         },
-        statisticsNewContent: {
+        statisticsOptimizateContent: {
           words: "350",
           points: "6",
           verses: "5",
