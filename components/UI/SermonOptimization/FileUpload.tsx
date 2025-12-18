@@ -1,8 +1,8 @@
-import { Upload, FileText, X } from "lucide-react";
+import { Upload, FileText } from "lucide-react";
 import { FILE_CONFIG } from "../../../utils/constants";
 
 export interface FileUploadProps {
-  onFileSelect: (file: File | null) => void;
+  onFileSelect: (file: File) => void;
   selectedFile: File | null;
   error: string | null;
 }
@@ -12,12 +12,6 @@ const FileUpload = ({ onFileSelect, selectedFile, error }: FileUploadProps) => {
     const file = event.currentTarget.files?.[0];
     if (file && onFileSelect) {
       onFileSelect(file);
-    }
-  };
-
-  const handleRemove = () => {
-    if (onFileSelect) {
-      onFileSelect(null);
     }
   };
 
@@ -71,12 +65,6 @@ const FileUpload = ({ onFileSelect, selectedFile, error }: FileUploadProps) => {
               </span>
             </div>
           </div>
-          <button
-            onClick={handleRemove}
-            className="text-green-600 hover:text-green-800 p-1 rounded hover:bg-green-100"
-          >
-            <X className="h-5 w-5" />
-          </button>
         </div>
       )}
     </div>
