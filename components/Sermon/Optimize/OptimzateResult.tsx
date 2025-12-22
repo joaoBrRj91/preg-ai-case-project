@@ -18,6 +18,21 @@ export interface SermonOptimizationData {
   };
 }
 
+const getKeyStatisticTranslated = (key: string) => {
+  switch (key) {
+    case "words":
+      return "palavras";
+    case "points":
+      return "pontos";
+    case "verses":
+      return "versículos";
+    case "minutes":
+      return "minutos";
+    default:
+      return key;
+  }
+};
+
 const OptimizationResult = ({
   title,
   improvements,
@@ -60,11 +75,13 @@ const OptimizationResult = ({
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
           {Object.entries(statisticsOriginalContent).map(([key, value]) => (
             <div
-              key={key}
+              key={getKeyStatisticTranslated(key)}
               className="bg-white rounded-lg p-3 text-center border border-gray-200"
             >
               <div className="text-2xl font-bold text-green-600">{value}</div>
-              <div className="text-sm text-gray-600 capitalize">{key}</div>
+              <div className="text-sm text-gray-600 capitalize">
+                {getKeyStatisticTranslated(key)}
+              </div>
             </div>
           ))}
         </div>
@@ -77,11 +94,13 @@ const OptimizationResult = ({
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
           {Object.entries(statisticsOptimizateContent).map(([key, value]) => (
             <div
-              key={key}
+              key={getKeyStatisticTranslated(key)}
               className="bg-white rounded-lg p-3 text-center border border-gray-200"
             >
               <div className="text-2xl font-bold text-green-600">{value}</div>
-              <div className="text-sm text-gray-600 capitalize">{key}</div>
+              <div className="text-sm text-gray-600 capitalize">
+                {getKeyStatisticTranslated(key)}
+              </div>
             </div>
           ))}
         </div>
